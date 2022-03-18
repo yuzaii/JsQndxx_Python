@@ -56,9 +56,9 @@ def main(laravel_session):  # 参数为cookie里的laravel_session 自行抓包�
         "_token": token[0],
         "lesson_id": lesson_id[0]
     }
-    res2 = s.post(url=confirmurl, params=params)
+    res = s.post(url=confirmurl, params=params)
     # print(res2.text)
-    res = res2.json()  # 返回结果转json
+    res = res.json()  # 返回结果转json
     print("返回结果:%s" % res)
     if res["status"] == 1 and res["message"] == "操作成功":
         print("青年大学习已完成")
