@@ -1,5 +1,11 @@
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+"""
+@author:yuzai
+@file:main.py
+@time:2022/03/18
+"""
 import re
-
 import requests
 import urllib3
 from bs4 import BeautifulSoup
