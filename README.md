@@ -51,7 +51,7 @@
 
 ### 现已上传我自己给我们学校开发的网站（只要是江苏省的学校都可以用）http://ntutools.cn/ 注册即用
 
-<img src="https://cdn.jsdelivr.net/gh/yuzaii/PicGo/img/202204080308256.png" alt="image-20220408030830110" style="zoom:80%;" />
+<img src="https://cdn.jsdelivr.net/gh/yuzaii/PicGo/img/202204080309349.png" alt="image-20220408030947743" style="zoom:80%;" />
 
 ### 创作不易 希望能得到您一颗小星星⭐️ 十分感谢
 
