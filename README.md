@@ -14,11 +14,11 @@
 
   既然要发送请求，那肯定要知道向哪发送请求
 
-  <img src="img/image-20220317212319083.png" alt="image-20220317212319083" style="zoom:50%;" />
+  <img src="https://cdn.jsdelivr.net/gh/yuzaii/PicGo/img/202204080305389.png" alt="image-20220317212319083" style="zoom:50%;" />
 
-  <img src="img/image-20220317210836350.png" alt="image-20220317210836350" style="zoom:50%;" />
+  <img src="https://cdn.jsdelivr.net/gh/yuzaii/PicGo/img/202204080305515.png" alt="image-20220317210836350" style="zoom:50%;" />
 
-  <img src="img/image-20220317211344168.png" alt="image-20220317211344168" style="zoom:50%;" />
+  <img src="https://cdn.jsdelivr.net/gh/yuzaii/PicGo/img/202204080305521.png" alt="image-20220317211344168" style="zoom:50%;" />
 
 + ##### 分析
 
@@ -36,7 +36,7 @@
 
 ​		当我写到第二个请求的时候发现请求失败，仔细观察了一下，原来在第一个请求发送成功后，在响应体的js里面有一个token和lesson_id
 
-<img src="img/image-20220317213507633.png" alt="image-20220317213507633" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/yuzaii/PicGo/img/202204080305112.png" alt="image-20220317213507633" style="zoom:50%;" />
 
 我们只要获取他们，然后添加到参数中就可以了。成功的返回结果如下：
 
@@ -48,6 +48,8 @@
 
 这样，一个简单的青年大学习的自动学习脚本就做好了。
 另外，我还做了一个java版本的供大家参考https://github.com/yuzaii/Qndxx_Java
+
+### 现已上传我自己给我们学校开发的网站（只要是江苏省的学校都可以用）http://ntutools.cn/ 注册即用
 
 ### 创作不易 希望能得到您一颗小星星⭐️ 十分感谢
 
