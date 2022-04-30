@@ -50,6 +50,7 @@
 另外，我还做了一个java版本的供大家参考https://github.com/yuzaii/Qndxx_Java
 
 ### 现已上传我自己给我们学校开发的网站（只要是江苏省的学校都可以用）http://ntutools.cn/ 注册即用
+手机抓包教程见[我的博客](https://yuzai.xyz/archives/c59a0c1a.html)
 
 <img src="https://cdn.jsdelivr.net/gh/yuzaii/PicGo/img/202204080309349.png" alt="image-20220408030947743" style="zoom:80%;" />
 
