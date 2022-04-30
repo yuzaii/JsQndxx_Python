@@ -22,14 +22,8 @@ def main(laravel_session):  # 参数为cookie里的laravel_session 自行抓包�
     }
     # 构造请求头
     headers = {
-        # 'User-Agent': "Mozilla/5.0 (iPhone; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x18001234) NetType/WIFI Language/zh_CN",
+        'User-Agent': "Mozilla/5.0 (iPhone; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x18001234) NetType/WIFI Language/zh_CN",
         'Cookie': "laravel_session=" + laravel_session  # 抓包获取
-        # "laravel_session=6bkiNtcb7Nhbe73AYoODf90H5xpUfdDMScNtFF4F"
-        # 'Cookie':"8rAucTd84mpMLxilmCjeWO08rbtC7opDnrwo9YvJ"
-        # 8rAucTd84mpMLxilmCjeWO08rbtC7opDnrwo9YvJ
-        # 74FrRKCDVZKhx91w0a4CDG53DmkeXCxBOkSzTTNH周良宇 003831928
-        # esX66JF8QROB5yx89KMpFBwnF2eNrVUbSpx8FVUX 姜宇 008629871
-        # vf6yckniFRDqepGNSaSD2SN4IhCv1wj6LPPqfh74 李靖翔
     }
     urllib3.disable_warnings()  # 不然会有warning
     login = s.get(url=loginurl, headers=headers, params=params, verify=False)  # 登录
@@ -73,5 +67,5 @@ def main(laravel_session):  # 参数为cookie里的laravel_session 自行抓包�
 
 
 if __name__ == '__main__':
-    laravel_session = "8rAucTd84mpMLxilmCjeWO08rbtC7opDnrwo9YvJ"
+    laravel_session = "8rAucTd84mpMLxilmCjeWO08rbtC7opDnrwosdaa" #自行抓包获取40位的laravel_session
     main(laravel_session)

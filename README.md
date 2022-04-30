@@ -14,11 +14,11 @@
 
   既然要发送请求，那肯定要知道向哪发送请求
 
-  <img src="img/image-20220317212319083.png" alt="image-20220317212319083" style="zoom:50%;" />
+  <img src="https://cdn.jsdelivr.net/gh/yuzaii/PicGo/img/202204080305389.png" alt="image-20220317212319083" style="zoom:50%;" />
 
-  <img src="img/image-20220317210836350.png" alt="image-20220317210836350" style="zoom:50%;" />
+  <img src="https://cdn.jsdelivr.net/gh/yuzaii/PicGo/img/202204080305515.png" alt="image-20220317210836350" style="zoom:50%;" />
 
-  <img src="img/image-20220317211344168.png" alt="image-20220317211344168" style="zoom:50%;" />
+  <img src="https://cdn.jsdelivr.net/gh/yuzaii/PicGo/img/202204080305521.png" alt="image-20220317211344168" style="zoom:50%;" />
 
 + ##### 分析
 
@@ -28,7 +28,7 @@
 
   外加一些参数，和一个带有laravel_session的cookie。我们只需要带着这些信息去请求就好了。
 
-  一开始我没有加上laravel_session，发现并不能成功发送，卡在了微信客户端验证的页面，无论我如何修改ua，都不行，我才想到青年大学习就是通过cookie中的laravel_session来获取用户信息的，不带他发送请求肯定不行，果然带上他就可以获取到我的信息了。我们都知道cookie是储存在用户本地的数据，但是我到现在还是不知道他的生命周期是久，目前差不多一个星期了，还是没有过期，希望能久一点吧。laravel_session可不可以自己生成呢？以我现在的技术很难，第一是应为肯定加密过，第二客服端是微信，破解也很难(如果我能破解了我就准备去腾讯上班了)，所以还是老老实实抓包吧。
+  一开始我没有加上laravel_session，发现并不能成功发送，卡在了微信客户端验证的页面，无论我如何修改ua，都不行，我才想到青年大学习就是通过cookie中的laravel_session来获取用户信息的，不带他发送请求肯定不行，果然带上他就可以获取到我的信息了。我们都知道cookie是储存在用户本地的数据，但是我到现在还是不知道他的生命周期是久，目前差不多一个星期了，还是没有过期，希望能久一点吧。laravel_session可不可以自己生成呢？以我现在的技术很难，第一是应为肯定加密过，第二因为客户端是微信，破解也很难(如果我能破解了我就准备去腾讯上班了)，所以还是老老实实抓包吧。
 
 + ##### 写代码
 
@@ -36,7 +36,7 @@
 
 ​		当我写到第二个请求的时候发现请求失败，仔细观察了一下，原来在第一个请求发送成功后，在响应体的js里面有一个token和lesson_id
 
-<img src="img/image-20220317213507633.png" alt="image-20220317213507633" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/yuzaii/PicGo/img/202204080305112.png" alt="image-20220317213507633" style="zoom:50%;" />
 
 我们只要获取他们，然后添加到参数中就可以了。成功的返回结果如下：
 
@@ -48,6 +48,11 @@
 
 这样，一个简单的青年大学习的自动学习脚本就做好了。
 另外，我还做了一个java版本的供大家参考https://github.com/yuzaii/Qndxx_Java
+
+### 现已上传我自己给我们学校开发的网站（只要是江苏省的学校都可以用）http://ntutools.cn/ 注册即用
+手机抓包教程见[我的博客](https://yuzai.xyz/archives/c59a0c1a.html)
+
+<img src="https://cdn.jsdelivr.net/gh/yuzaii/PicGo/img/202204080309349.png" alt="image-20220408030947743" style="zoom:80%;" />
 
 ### 创作不易 希望能得到您一颗小星星⭐️ 十分感谢
 
