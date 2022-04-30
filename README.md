@@ -18,7 +18,7 @@
 
   <img src="https://file-1305871479.cos.ap-nanjing.myqcloud.com/img/202204301653543.png" alt="image-20220317210836350" style="zoom:50%;" />
 
-  <img src="https://file-1305871479.cos.ap-nanjing.myqcloud.com/img/202204301653999.png" alt="image-20220317211344168" style="zoom:50%;" />
+  <img src="https://file-1305871479.cos.ap-nanjing.myqcloud.com/img/202204302000461.png" alt="image-20220317211344168" style="zoom:50%;" />
 
 + ##### 分析
 
@@ -36,7 +36,7 @@
 
 ​		当我写到第二个请求的时候发现请求失败，仔细观察了一下，原来在第一个请求发送成功后，在响应体的js里面有一个token和lesson_id
 
-<img src="https://file-1305871479.cos.ap-nanjing.myqcloud.com/img/202204301653820.png" alt="image-20220317213507633" style="zoom:50%;" />
+<img src="https://file-1305871479.cos.ap-nanjing.myqcloud.com/img/202204302000219.png" alt="image-20220317213507633" style="zoom:50%;" />
 
 我们只要获取他们，然后添加到参数中就可以了。成功的返回结果如下：
 
